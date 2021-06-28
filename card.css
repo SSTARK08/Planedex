@@ -319,6 +319,8 @@ body {
     }
 
     .freecard {
+        padding-right: 48px;
+        padding-bottom: 15px;
         margin-right: 55px;
         min-height: 35vh;
         width: 45rem;
@@ -348,7 +350,7 @@ body {
         height: 20px;
         padding-top: 2px;
         font-size: 13.5px;
-        left:110px;
+        left:105px;
         top:108px;
     }
     .iconbadge2{
@@ -356,28 +358,28 @@ body {
         height: 20px;
         padding-top: 2px;
         font-size: 13.5px;
-        left:245px;
+        left:230px;
         top:108px;
     }
     .iconbadge3{
         height: 20px;
         padding-top: 2px;
         font-size: 13.5px;
-        left:445px;
+        left:415px;
         top:108px;
     }
     .iconbadge4{
         height: 20px;
         padding-top: 2px;
         font-size: 13.5px;
-        right:120px;
+        right:122px;
         top:108px;
     }
     .iconbadge5{
         height: 20px;
         padding-top: 2px;
         font-size: 13.5px;
-        right:10px;
+        right:28px;
         top:108px;
     }
     .freeinfo{
