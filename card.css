@@ -313,4 +313,76 @@ body {
         height: 320px;
     }
 }
+@media screen and (max-width:991px) {
+    .freecontent {
+        width: 70%;
+    }
+
+    .freecard {
+        margin-right: 55px;
+        min-height: 35vh;
+        width: 45rem;
+    }
+
+    .freecoins img {
+        width: 5rem;
+    }
+
+    .freecoins .i1 {
+        width: 7rem;
+    }
+
+    .freecoins .i2 {
+        width: 10rem;
+    }
+
+    .freecoins .i3 {
+        width: 6rem;
+    }
+    .freecircle{
+        height: 7rem;
+        width: 41rem;
+    }
+    .iconbadge1{
+        width: 50px;
+        height: 20px;
+        padding-top: 2px;
+        font-size: 13.5px;
+        left:110px;
+        top:108px;
+    }
+    .iconbadge2{
+        width: 50px;
+        height: 20px;
+        padding-top: 2px;
+        font-size: 13.5px;
+        left:245px;
+        top:108px;
+    }
+    .iconbadge3{
+        height: 20px;
+        padding-top: 2px;
+        font-size: 13.5px;
+        left:445px;
+        top:108px;
+    }
+    .iconbadge4{
+        height: 20px;
+        padding-top: 2px;
+        font-size: 13.5px;
+        right:120px;
+        top:108px;
+    }
+    .iconbadge5{
+        height: 20px;
+        padding-top: 2px;
+        font-size: 13.5px;
+        right:10px;
+        top:108px;
+    }
+    .freeinfo{
+        margin-right: 20px;
+        width:40rem;
+    }
+}
 
