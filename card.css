@@ -151,13 +151,15 @@ body {
     grid-auto-rows: minmax(100px, auto);
     height: auto;
 }
+
 @media screen and (max-width:991px) {
     .wrap {
         margin: auto;
         grid-gap: 1em;
-        grid-template-columns: repeat(2,1fr); 
+        grid-template-columns: repeat(2, 1fr);
     }
 }
+
 .freecontent {
     margin: auto;
     align-items: center;
@@ -169,7 +171,7 @@ body {
 .freecard {
     background: linear-gradient(90deg, rgba(150, 150, 150, 0.25), rgba(133, 132, 132, 0.2));
     transform-style: preserve-3d;
-    min-height: 48vh;
+    height: 48vh;
     width: 75rem;
     box-shadow: 3px 20px 30px rgba(164, 244, 249, 0.2), 0px 0px 50px rgba(224, 255, 255, 0.2);
     border-radius: 25px;
@@ -299,6 +301,21 @@ body {
         height: 320px;
     }
 }
+
+@media screen and (max-width:991px) {
+    .card4 {
+        min-height: 100px;
+    }
+
+    .coins4 {
+        min-height: 190px;
+    }
+
+    .info4 {
+        height: 320px;
+    }
+}
+
 @media screen and (max-width:991px) {
     .freecontent {
         width: 70%;
