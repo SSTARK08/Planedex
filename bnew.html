@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--<link rel="stylesheet/less" type="text/css" href="styles.less" />-->
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script>
+        var hour;
+        var mins;
+        var secs;
+        var interval;
+
+        $(document).ready(function() {
+            $("#send-code").click(function() {
+                hour = 0;
+                mins = 0;
+                secs = 10;
+                var btn = $(this);
+                btn.attr("disabled", true);
+                $('#send-code').css('cursor', 'wait');
+
+                interval = setInterval(function() {
+                    if (hour >= 0 && mins >= 0 && secs >= 0) {
+                        btn.innerHTML = "&#x1F512";
+                        btn.text("\uD83D\uDD12     "+" "+" "+" "+" "+"Available In......" + pad(hour, 2) + ":" + pad(mins, 2) + ":" + pad(secs, 2));
+
+                        if (secs > 0) {
+                            secs--;
+                        } else {
+                            secs = 59;
+                            mins--;
+                        }
+                        if(mins < 0 && hour >=0){
+                            mins = 59;
+                            hour--;
+                        }
+                        if (hour == 0 && mins == 0 && secs == 0) {
+                            clearInterval(interval);
+                            btn.removeAttr("disabled").text("FREE");
+                            $('#send-code').css('cursor', 'pointer');
+                            return true;
+                        }
+                    }
+                }, 1000);
+            });
+        });
+
+        function pad(num, size) {
+            var s = num + "";
+            while (s.length < size) s = "0" + s;
+            return s;
+        }
+    </script>
+    <button id="send-code" style="cursor: pointer">FREE</button>
+</body></html>
