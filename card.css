@@ -299,20 +299,6 @@ body {
         height: 320px;
     }
 }
-
-@media screen and (max-width:991px) {
-    .card4 {
-        min-height: 100px;
-    }
-
-    .coins4 {
-        min-height: 190px;
-    }
-
-    .info4 {
-        height: 320px;
-    }
-}
 @media screen and (max-width:991px) {
     .freecontent {
         width: 70%;
@@ -320,14 +306,27 @@ body {
 
     .freecard {
         padding-right: 48px;
-        padding-bottom: 15px;
+        padding-bottom: 5px;
         margin-right: 55px;
-        min-height: 35vh;
+        height: 33vh;
         width: 45rem;
+    }    
+    .freecoins{
+        height: 16vh;
     }
-
     .freecoins img {
         width: 5rem;
+    }
+
+    .freeinfo h1 {
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .freeinfo h3 {
+        padding-top: 10px;
+        margin: 0;
+        font-size: 11px;
     }
 
     .freecoins .i1 {
@@ -341,50 +340,60 @@ body {
     .freecoins .i3 {
         width: 6rem;
     }
-    .freecircle{
+
+    .freecircle {
         height: 7rem;
         width: 41rem;
     }
-    .iconbadge1{
+
+    .iconbadge1 {
         width: 50px;
         height: 20px;
         padding-top: 2px;
         font-size: 13.5px;
-        left:105px;
-        top:108px;
+        left: 105px;
+        top: 110px;
     }
-    .iconbadge2{
+
+    .iconbadge2 {
         width: 50px;
         height: 20px;
         padding-top: 2px;
         font-size: 13.5px;
-        left:230px;
-        top:108px;
+        left: 230px;
+        top: 110px;
     }
-    .iconbadge3{
+
+    .iconbadge3 {
         height: 20px;
         padding-top: 2px;
         font-size: 13.5px;
-        left:415px;
-        top:108px;
+        left: 415px;
+        top: 110px;
     }
-    .iconbadge4{
+
+    .iconbadge4 {
         height: 20px;
         padding-top: 2px;
         font-size: 13.5px;
-        right:122px;
-        top:108px;
+        right: 122px;
+        top: 110px;
     }
-    .iconbadge5{
+
+    .iconbadge5 {
         height: 20px;
         padding-top: 2px;
         font-size: 13.5px;
-        right:28px;
-        top:108px;
+        right: 28px;
+        top: 110px;
     }
-    .freeinfo{
+
+    .freeinfo {
         margin-right: 20px;
-        width:40rem;
+        width: 40rem;
+    }
+
+    #btnLarge {
+        margin-top: 0;
     }
 }
-
