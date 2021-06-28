@@ -14,7 +14,7 @@
 .card4 {
     background: linear-gradient(90deg, rgba(150, 150, 150, 0.25), rgba(133, 132, 132, 0.2));
     transform-style: preserve-3d;
-    min-height: 48vh;
+    min-height: 52vh;
     width: 15rem;
     box-shadow: 3px 20px 30px rgba(164, 244, 249, 0.2), 0px 0px 50px rgba(224, 255, 255, 0.2);
     border-radius: 25px;
@@ -151,15 +151,11 @@ body {
     grid-auto-rows: minmax(100px, auto);
     height: auto;
 }
-@media screen and (max-width:380px) {
+@media screen and (max-width:991px) {
     .wrap {
         margin: auto;
-        display: grid;
-        grid-template-columns: repeat(2, 2fr);
         grid-gap: 1em;
-        grid-auto-rows: minmax(100px, auto);
-        height: auto;
-        grid-gap:10px;
+        grid-template-columns: repeat(2,1fr); 
     }
 }
 .freecontent {
@@ -261,7 +257,7 @@ body {
     width: 9rem;
 }
 
-@media screen and (min-width:400px) {
+@media screen and (max-width:991px) {
     .card {
         min-height: 100px;
     }
@@ -275,7 +271,7 @@ body {
     }
 }
 
-@media screen and (min-width:400px) {
+@media screen and (max-width:991px) {
     .card2 {
         min-height: 100px;
     }
@@ -289,7 +285,7 @@ body {
     }
 }
 
-@media screen and (min-width:400px) {
+@media screen and (max-width:991px) {
     .card3 {
         min-height: 100px;
     }
@@ -303,7 +299,7 @@ body {
     }
 }
 
-@media screen and (min-width:400px) {
+@media screen and (max-width:991px) {
     .card4 {
         min-height: 100px;
     }
